@@ -1,0 +1,12 @@
+({took:0, timed_out:false, _shards:{total:5, successful:5, skipped:0, failed:0}, hits:{total:25, max_score:6.9335227, hits:[
+{_index:"imena", _type:"vsa", _id:"3", _score:6.9335227, _source:{id:"3", ime:"Adam", year:1995, number:7, rang:132, spol:"m"}},
+{_index:"imena", _type:"vsa", _id:"11", _score:6.9335227, _source:{id:"11", ime:"Adam", year:2003, number:13, rang:99, spol:"m"}},
+{_index:"imena", _type:"vsa", _id:"17", _score:6.9335227, _source:{id:"17", ime:"Adam", year:2009, number:17, rang:109, spol:"m"}}, 
+{_index:"imena", _type:"vsa", _id:"23", _score:6.9335227, _source:{id:"23", ime:"Adam", year:2015, number:29, rang:81, spol:"m"}},
+{_index:"imena", _type:"vsa", _id:"2", _score:6.741571, _source:{id:"2", ime:"Adam", year:1994, number:8, rang:126, spol:"m"}},
+{_index:"imena", _type:"vsa", _id:"4", _score:6.741571, _source:{id:"4", ime:"Adam", year:1996, number:null, rang:null, spol:"m"}},
+{_index:"imena", _type:"vsa", _id:"6", _score:6.741571, _source:{id:"6", ime:"Adam", year:1998, number:11, rang:102, spol:"m"}},
+{_index:"imena", _type:"vsa", _id:"15", _score:6.741571, _source:{id:"15", ime:"Adam", year:2007, number:21, rang:90, spol:"m"}},
+{_index:"imena", _type:"vsa", _id:"20", _score:6.741571, _source:{id:"20", ime:"Adam", year:2012, number:36, rang:71, spol:"m"}},
+{_index:"imena", _type:"vsa", _id:"1", _score:6.7355084, _source:{id:"1", ime:"Adam", year:1993, number:12, rang:102, spol:"m"}
+}]}})
