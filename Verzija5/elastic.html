@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="elasticsearch.jquery.js"></script>
+        <script src="./require.js"></script>
+        <script src="./script.js"></script>
+        
+    </head>
+    <body >
+        <input type="text" id="inputBoxIme"  value="Aleks" >
+        <!-- <input type="button" name="" onclick="update()" value="Najdi">   -->
+        <!-- <input type="button" name="" onclick="dodajNovoIme()" value="Dodaj novi ime">   -->
+        <input type="button" name="" onclick="dodajNovoIme(),naZaslonImena()" value="Dodaj novi ime">  
+        <input type="button" name="" onclick="blabla()" value="Prikazi podobnaImena">  
+
+
+
+        <div id="iskanaImena">
+        </div>
+
+        <dir id="podobnaImena" style="color:#0000FF">
+        </dir>
+ 
+
+
+    </body>
+</html>
+<!-- <script>
+$( "div#p" ).click(function() {
+  $( this ).slideUp();
+});
+</script> -->
