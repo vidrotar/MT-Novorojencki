@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style type="text/css">
+	.inline {display: inline;}
+</style>
+
+
+
+<div id="celota">
+	<div id="1.stolpec" onclick="dodajVrstico(this.id)">
+		<div class="inline"  id="1.vrstica" onclick="dodajStoplec()">1.ZNAKOV &nbsp</div>
+	</div>
+</div>
+<div onclick='dodajStoplec("1.stolpec")''> neki </div>
+
+
+<!-- <button onclick="dodajStoplec()">Dodaj stoplec</button>
+<button onclick="dodajVrstico()">Dodaj vrstico</button>
+<button onclick="dodajStoplec2()">Dodaj v vrstico 2</button>
+ -->
+
+<script>
+var stoplec=2;
+var vrstica=1;
+
+function dodajVrstico(id) {
+	console.log("id:" + id);
+	var idstarsa = document.getElementById(id).parentElement.id;
+    var newNode = document.createElement('div');
+    newNode.setAttribute("id", "" + id + "-vrstica" +vrstica);
+    vrstica +=1;
+    newNode.innerHTML = vrstica + " &nbsp";
+    document.getElementById(id).appendChild(newNode);       
+}
+
+function dodajStoplec(id) {
+	console.log("id:" + id);
+    var newNode = document.createElement('div');
+    newNode.className = 'inline';
+    newNode.setAttribute("id", "stolpec"+ stoplec);    
+    newNode.innerHTML = stoplec + ".ZNAKOV &nbsp";
+    stoplec +=1;
+    document.getElementById(id).appendChild(newNode);       
+}
+console.log()
+</script>
+
+
+</body>
+</html>

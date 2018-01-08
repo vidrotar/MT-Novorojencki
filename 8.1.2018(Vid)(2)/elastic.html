@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- knjiznica za suggestione imen -->
+        <link rel="stylesheet" href="./tools/awesomplete-gh-pages/awesomplete.css" >
+        <script src="./tools/awesomplete-gh-pages/awesomplete.js" async></script>
+        <!-- // -->
+
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <link rel="stylesheet" type="text/css" href="tools/css.css">
+        <link rel="stylesheet" type="text/css" href="tools/inputField.css">
+
+
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./tools/elasticsearch.jquery.js"></script>
+        <script src="./tools/require.js"></script>
+        <script src="./script.js"></script>
+
+
+
+    </head>
+    <body>
+        <div class="col-11"> <!-- LEVO -->
+            <div class="col-11">
+                Baby Names
+            </div>
+            <divclass="col-11">
+                <div class="col-3 input-effect vnosImena" onkeyup="SorodnaImena()">
+                    <!-- <input class="effect-16" type="text" placeholder="" value="Ime" id="inputBoxIme" onkeyup="SorodnaImena()"> -->
+                    <input type="text" class="awesomplete effect-16" id="inputBoxIme" oninput="isciPodobnaImena()"/>
+                    <label></label>
+                    <span class="focus-border"></span>
+                </div>
+                <div class="col-3" >
+                    <a class="button outline col-4" id="dodajGumb" onclick="dodajNovoIme(),naZaslonIskanaImena()" href="#">Išči 
+                        <span class="lines"></span>
+                    </a>
+                </div>
+                <div>&nbsp</div>
+            </div>
+            <div class="col-1" >&nbsp</div>
+        </div>
+
+        <div class="col-10 padding" style="padding-left: 10px">&nbsp
+            <dir id="canvas" class="col-10" style=""> </dir>
+        </div>
+
+        <div>
+            <div id="iskanaImena" style="float: left;" class="col-6">
+                Iskana imena:
+            </div>
+
+            <!-- TODO: link za displayanje divov pravilno http://jsfiddle.net/eMNfd/21/ -->
+
+            <!-- TODO: IZRIS GRAFOV NE SME ITI POD X OS -->
+            <dir id="podobnaImena" style="float: right;" class="col-10"> 
+                Podobna imena:
+                <br>
+                <br>
+                <div id="celota">
+                    <div> input </div>
+                    <!-- za dodajanje stolpcev -->
+                    <div id="plusDesno" onclick='dodajStoplec("1.stolpec")'> + </div>
+
+                    <div id="1.stolpec">
+
+                        <!-- za dodajanje vrstic -->
+                        <div id="plus" onclick="dodajVrstico('1.stolpec')"> + </div>        
+                    </div>
+                    
+                </div>
+                <!-- <div class="inline"  id="1.vrstica" onclick="dodajStoplec()">1.ZNAKOV nbsp</div> -->
+            </dir>    
+            
+        </div>
+        
+
+     
+      
+
+    </body>
+</html>

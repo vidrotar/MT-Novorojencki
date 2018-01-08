@@ -1,0 +1,29 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+#padding{
+    padding: 15;
+}
+#iskanaImena,#podobnaImena{
+    padding: 30px;
+    font: 15px "Lato", Arial, sans-serif;
+    font-weight: bold;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #3399FF;
+}
+
+.inline {
+    display: inline-block;
+}
+
+#celota {
+    float: left;
+}
+
+#plusDesno {
+    float: right;
+}
